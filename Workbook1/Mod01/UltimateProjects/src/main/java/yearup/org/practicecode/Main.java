@@ -1,23 +1,58 @@
 package yearup.org.practicecode;
+import java.util.Scanner;
 
 class UltimateProjects {
     public static void main(String[] args){
+    Scanner consoleInput=new Scanner(System.in);
 
-        System.out.println("\u007b");// prints out value from ascii table ({ )
-        System.out.println("ring that bell");
+    System.out.print("enter a number");
+    float a= consoleInput.nextFloat();
+    System.out.println("First number: "+a);
 
-        System.out.println("\n\n\n");
-        System.out.println("Hello  "+ "earth"+" " +2.5);
+    System.out.println("Enter a number ");
+    float b= consoleInput.nextFloat();
+    System.out.println("second number: "+b);
+
+    System.out.println("What operation would you like to do? ");
+    String command= consoleInput.nextLine();
+    System.out.println(command);
+
+   float c= a+b;
+   System.out.println("the answer is: "+c);
+   System.out.println(command);
 
 
 
-        System.out.print("Goodbye");// doesn't print on new line b/c no ln or \n
-        System.out.print("  ");
-        System.out.print("Everyone\n");
 
 
-        double price= 23.45668;
-        System.out.printf("Hello the cost is %8.2f ",  price);
+
+
+
+       /*
+        if (operation == "+")
+        {
+            System.out.println("your answer is" + (num1 + num2));
+        }
+        else if  (operation == "-")
+        {
+            System.out.println("your answer is" + (num1 - num2));
+        }
+
+        else if (operation == "/")
+        {
+            System.out.println("your answer is" + (num1 / num2));
+        }
+       else if (operation == "*")
+        {
+            System.out.println("your answer is" + (num1 * num2));
+        };
+
+        */
+
+
+
+
+
     }
 
 }
